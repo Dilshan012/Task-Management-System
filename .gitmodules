@@ -1,0 +1,12 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/Dilshan012/Task-Management-System-FrontEnd-ReactJS.git
+[submodule "Front-End"]
+	path = Front-End
+	url = https://github.com/Dilshan012/Task-Management-System-FrontEnd-ReactJS.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/Dilshan012/Task-Managemant-System-Back-End-Spring-Boot.git
+[submodule "Back-End"]
+	path = Back-End
+	url = https://github.com/Dilshan012/Task-Managemant-System-Back-End-Spring-Boot.git

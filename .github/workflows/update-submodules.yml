@@ -17,14 +17,9 @@ jobs:
         with:
           submodules: true
 
-      - name: Configure Git to allow unrelated histories
-        run: |
-          git config --global pull.rebase false
-          git config --global fetch.recurseSubmodules on-demand
-
       - name: Update submodules
         run: |
-          git submodule update --remote --merge || git submodule update --remote --merge --strategy-option=theirs
+          git submodule foreach 'git fetch origin main && git merge origin/main --allow-unrelated-histories || echo "Merge conflicts, resolve manually"'
           git add .
           git commit -m "Update submodules to latest commits" || echo "No changes to commit"
           git push origin main || echo "Nothing to push"

@@ -25,12 +25,12 @@ This project is a full-stack web application that allows users to register, log 
 
 ## Installation and Setup
 
-### Prerequisites
+## Prerequisites
 - Java 11 or higher
 - Node.js and npm
 - MySQL (if not using H2 database)
 
-### Back-End Setup
+## Back-End Setup
 
 1. Clone the repository:
    ```bash
@@ -39,20 +39,15 @@ This project is a full-stack web application that allows users to register, log 
 -  Navigate to the back-end directory: cd Back-End
 
 - Configure the database in src/main/resources/application.properties:
-# For H2 Database
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username=sa
-spring.datasource.password=password
-spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-spring.h2.console.enabled=true
 
-### For MySQL Database (Uncomment if using MySQL)
-### spring.datasource.url=jdbc:mysql://localhost:3306/taskdb
-### spring.datasource.username=root
-### spring.datasource.password=yourpassword
-### spring.jpa.hibernate.ddl-auto=update
-### spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+### For MySQL Database
+spring.application.name=taskmanagemantsystem
+spring.datasource.url=jdbc:mysql://localhost:3306/tasks_management
+spring.datasource.username=root
+spring.datasource.password=<YourPassword>
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+server.port=1010
 
 - Run the Spring Boot application: ./mvnw spring-boot:run
 

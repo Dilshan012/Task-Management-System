@@ -34,10 +34,9 @@ This project is a full-stack web application that allows users to register, log 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Dilshan012/Task-Management-System.git
-   cd task-manager-app
+   git clone --recurse-submodules https://github.com/Dilshan012/Task-Management-System.git
 
-   Navigate to the back-end directory:
+-  Navigate to the back-end directory:
 
 cd backend
 Configure the database in src/main/resources/application.properties:

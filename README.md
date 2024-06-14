@@ -4,12 +4,14 @@
 This project is a full-stack web application that allows users to register, log in, and manage a list of tasks. The application uses Spring Boot for the back end and React.js for the front end. Authentication is implemented using JSON Web Tokens (JWT).
 
 ## Technologies Used
+
 - **Back-End:**
   - Spring Boot
   - Spring Security
   - Spring Data JPA
   - JWT
   - MySQL (or H2 Database)
+
 - **Front-End:**
   - React.js
   - Axios

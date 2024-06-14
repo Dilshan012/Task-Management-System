@@ -52,7 +52,7 @@ This project is a full-stack web application that allows users to register, log 
 - Run the Spring Boot application: ./mvnw spring-boot:run
 
 ## Front-End Setup
-- Navigate to the front-end directory: cd Front-End\task-managemant-frontend
+- Navigate to the front-end directory: cd Front-End/task-managemant-frontend
 
 - Install dependencies: npm install
 

@@ -19,7 +19,7 @@ jobs:
 
       - name: Update submodules
         run: |
-          git submodule update --remote --merge
+          git submodule foreach git pull origin main
           git add .
           git commit -m "Update submodules to latest commits"
           git push origin main

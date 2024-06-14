@@ -44,7 +44,7 @@ This project is a full-stack web application that allows users to register, log 
 #### spring.application.name=taskmanagemantsystem
 #### spring.datasource.url=jdbc:mysql://localhost:3306/tasks_management
 #### spring.datasource.username=root
-#### spring.datasource.password=<YourPassword>
+#### spring.datasource.password= >>YourPassword<<
 #### spring.jpa.hibernate.ddl-auto=update
 #### spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 #### server.port=1010

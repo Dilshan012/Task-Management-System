@@ -36,13 +36,9 @@ This project is a full-stack web application that allows users to register, log 
    ```bash
    git clone --recurse-submodules https://github.com/Dilshan012/Task-Management-System.git
 
--  Navigate to the back-end directory:
+-  Navigate to the back-end directory: cd Back-End
 
-cd backend
-Configure the database in src/main/resources/application.properties:
-
-properties
-
+- Configure the database in src/main/resources/application.properties:
 # For H2 Database
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
@@ -58,21 +54,18 @@ spring.h2.console.enabled=true
 ### spring.jpa.hibernate.ddl-auto=update
 ### spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
 
-- Run the Spring Boot application:
-./mvnw spring-boot:run
+- Run the Spring Boot application: ./mvnw spring-boot:run
 
 ## Front-End Setup
+- Navigate to the front-end directory: cd Front-End\task-managemant-frontend
 
-- Navigate to the front-end directory:
-cd ../frontend
+- Install dependencies: npm install
 
-- Install dependencies:
-npm install
-
-- Run the React application:
-npm start
+- Run the React application: npm start
 
 ## Running the Application
 - Open your browser and navigate to http://localhost:3000.
+
 - Register a new user and log in.
+
 - Manage your tasks by adding, editing, and deleting them.

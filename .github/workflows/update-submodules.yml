@@ -1,0 +1,27 @@
+name: Update Submodules
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *' # This runs the workflow every day at midnight UTC
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Update submodules
+        run: |
+          git submodule update --remote --merge
+          git add .
+          git commit -m "Update submodules to latest commits"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
